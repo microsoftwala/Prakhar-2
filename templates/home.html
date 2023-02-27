@@ -4,6 +4,9 @@
     <title>My carrer Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    <style>
+     body{
+       background-color:rgb(200,200,220);
+     }
      h1{
        font-size:40px;
        font-family:Roboto;
@@ -45,16 +48,41 @@
        margin:auto;
       padding-left:10px;
      }
+     .btn{
+      text-align:center; 
+      font-size :15px;
+       font-family:Roboto;
+     }
+     .btn:hover{
+       background-color:rgb(100,100,100);
+     }
+     .Btn{
+       margin-bottom:10px;
+       position:fixed;
+       right: 0px;
+       left: 0px;
+       top:0px;
+       box-shadow:0 2px 4px rgba(0,0,0,0.5);
+       padding: 5px 10px;
+       background-color:aliceblue;
+     }
    </style>
 
     
   <body>
+      {% include 'nav.html' %}
+    <br><br>
     <div id="container">
       <h1>Prakhar Carrer</h1>
       <img id="banner" src="https://media.istockphoto.com/id/1412529049/photo/incandescent-lamp-on-the-background-of-banknotes-the-concept-of-the-need-to-save-energy.jpg?b=1&s=170667a&w=0&k=20&c=oVrwc3ugxE_5JX8sFBhDYFM6RYxHq6PCuZHmaMD3_Dg=" height=320px>
-      <h2>About Prakhar</h2>
+      <h2 id="About">About Prakhar</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, nisi est consequatur nemo praesentium ad eveniet maxime odio nam blanditiis, totam officia. Perferendis, dicta natus numquam aliquid, nihil laborum beatae incidunt, deserunt dignissimos excepturi possimus molestias quibusdam sed in. Inventore dicta, vel eligendi at aut fugiat, illum nemo provident recusandae enim ratione nulla impedit consequuntur non similique aliquid maxime accusamus officiis velit libero totam. Inventore et repellendus aspernatur officiis quasi, saepe expedita culpa pariatur fugiat earum, cupiditate voluptas. Itaque doloremque atque voluptatum, iste eius quos soluta ad nemo non unde nihil possimus dicta ipsum in expedita amet autem voluptatibus at!</p>
-      <h2>Open Position</h2>
+      <h2 id="Carrer">Prakhar Carrer</h2>
+      <div class="row" >
+        <div class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, nisi est consequatur nemo praesentium ad eveniet maxime odio nam blanditiis, totam officia. Perferendis, dicta natus numquam aliquid, nihil laborum beatae incidunt, deserunt dignissimos excepturi possimus molestias quibusdam sed in. Inventore dicta, vel eligendi at aut fugiat, illum nemo provident recusandae enim ratione nulla impedit consequuntur non similique aliquid maxime accusamus officiis velit libero totam.</div>
+        <div class="d-none d-md-block col-md-6"><img src="https://images.unsplash.com/photo-1576267423429-569309b31e84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVtcGxveWVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Employees.img"  style="border-radius:10px;height:240px"; margin-left:10px></div>
+        </div>
+      <h2 id="Jobs">Open Position</h2>
       <p>TODO- Show the jobs here</p>
     </div>
     
@@ -65,7 +93,7 @@
       </div>
     
      <div class="text-center mt-2 mb-4 "> 
-      <button class="btn btn-primary btn-lg">Contact Us</button></div>
+      <a href="mailto:prakhardeoria.2004@gmail.com?subject=contact&"class="btn btn-primary btn-lg">Contact Us</a></div>
     
      <div id="container"> <p style="margin-top:20px;">Copyright:2023</p>
     </div>
